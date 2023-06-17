@@ -61,8 +61,10 @@
       <!-- hero section -->
       <section class="main-hero section">
         <div class="container">
-          <h1 class="main-title main-hero-title">Effective Solutions for Your Business</h1>
-          <button class="btn main-hero-btn" type="button">Order Service</button>
+          <h1 class="main-title main-hero-title animate__animated animate__flip">
+            Effective Solutions for Your Business</h1
+          >
+          <button class="btn main-hero-btn" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
 
@@ -122,7 +124,13 @@
       <!-- service section -->
       <section class="main-service section">
         <div class="container">
-          <h2 class="section-title main-service-title">What are we doing</h2>
+          <h2
+            class="section-title main-service-title"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            >What are we doing</h2
+          >
           <ul class="main-service-list list flex-container card-set">
             <li class="main-service-item card-set-item">
               <img
@@ -158,7 +166,14 @@
       <!-- team section -->
       <section class="main-team section">
         <div class="container">
-          <h2 class="section-title main-team-title">Our Team</h2>
+          <h2
+            class="section-title main-team-title"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            Our Team</h2
+          >
           <ul class="main-team-list list flex-container">
             <li class="main-team-item card-set-item">
               <img
@@ -327,7 +342,17 @@
       <!-- customer section -->
       <section class="main-cust section">
         <div class="container">
-          <h2 class="main-cust-title section-title">Customers</h2>
+          <h2
+            class="main-cust-title section-title"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            Customers
+          </h2>
           <ul class="main-cust-list list flex-container">
             <li class="main-cust-item">
               <a href="" class="main-cust-link" target="_blank" rel="noopener noreferrer nofollow">
@@ -420,6 +445,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-btn btn"></button>
+      </div>
+    </div>
     <script src="./modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
