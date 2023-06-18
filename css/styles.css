@@ -268,7 +268,14 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav-link::after {
+.current::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  color: var(--color-ocean);
 }
 
 .header-nav-link:hover,
@@ -652,8 +659,10 @@ body {
   background-color: var(--color-cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  display: block;
+  display: flex;
   margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-close-btn:hover,
@@ -663,8 +672,6 @@ body {
 }
 
 .close-btn-icon {
-  display: block;
-  margin: 0 auto;
   fill: var(--color-navy-blue);
 }
 
