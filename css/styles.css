@@ -686,7 +686,6 @@ body {
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: var(--color-ocean);
-  box-shadow: none;
   border: none;
 }
 
@@ -695,8 +694,8 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn-icon:hover,
-.close-btn-icon:focus {
+.modal-close-btn:hover .close-btn-icon,
+.modal-close-btn:focus .close-btn-icon {
   fill: var(--color-white);
 }
 
