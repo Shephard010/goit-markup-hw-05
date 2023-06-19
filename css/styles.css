@@ -610,6 +610,7 @@ body {
 
 .pfl-row-overlay {
   position: absolute;
+  cursor: pointer;
   top: 0;
   left: 0;
   width: 100%;
@@ -669,6 +670,7 @@ body {
 
 .modal-close-btn {
   position: absolute;
+  cursor: pointer;
   padding: 0;
   width: 24px;
   height: 24px;
@@ -681,26 +683,17 @@ body {
   margin-left: auto;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--color-navy-blue);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: var(--color-ocean);
+  fill: var(--color-white);
   box-shadow: none;
   border: none;
-}
-
-.close-btn-icon {
-  fill: var(--color-navy-blue);
-  transition-property: fill;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-}
-
-.close-btn-icon:hover,
-.close-btn-icon:focus {
-  fill: var(--color-white);
 }
 
 .is-hidden {
