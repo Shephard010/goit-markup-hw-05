@@ -705,6 +705,9 @@ body {
   pointer-events: none;
 }
 
+.modal-title {
+}
+
 /**
   |============================
   | SANDBOX
